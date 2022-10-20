@@ -1,0 +1,1 @@
+My name is Allison Allen, i'm a student of Stutern Graduate Accelertator cohort 1.4 enrolled in the Software Engineering track. I am passionate to learn, build and grow.
