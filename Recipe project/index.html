@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            background: rgb(223, 211, 211);
+        }
+
+        .navlist ul li {
+            display: inline-block;
+            margin: 8px;
+        }
+
+        .navlist ul {
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .navlist a {
+            padding: 20px;
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: brown;
+        }
+
+        main {
+            margin: 20px 30px;
+            max-width: 700px;
+        }
+
+        .head {
+            margin-bottom: 30px;
+        }
+
+        .head h1 {
+            margin-bottom: 20px;
+        }
+
+        .head p {
+            margin-bottom: 8px;
+        }
+
+        .images {
+            display: block;
+            padding: 10px 30px;
+        }
+
+        .images li {
+            display: inline-block;
+        }
+
+        img {
+            background-color: #fff;
+            padding: 4px;
+            margin: 5px;
+            border-radius: 2px;
+        }
+        
+        button {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+            border-color: brown;
+            margin-left: 20px;
+        }
+
+        .about, .ingredients, .about, .steps {
+            margin: 10px 0 30px;
+        }
+
+        .about h2, p {
+            padding-bottom: 10px;
+        }
+
+        .ingredients h2 {
+            padding-bottom: 20px;
+        }
+
+        .ingredients table {
+            margin: 0 30px;
+        }
+
+        table, th, td {
+           border: 1px solid brown; 
+           border-collapse: collapse;
+           padding: 10px;
+        }
+
+        .steps h2 {
+            margin-bottom: 15px;
+        }
+
+        .steps ol li {
+            margin: 5px;
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background-color: brown;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navlist">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#ingredients">Ingredients</a></li>
+            <li><a href="#steps">Steps</a></li>
+            <li><a href="#photos">Photos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="head" id="home">
+            <h1>Alfredo Sauce</h1>
+            <p>This Alfredo sauce recipe always turns out rich, creamy and cheesy! A delicious way to transform plain fettuccine pasta or steamed vegetables.</p>
+            <div class="images">
+                <img src="./Images/img1.jpg" alt="alfredo" width="200px" height="270px">
+                <img src="./Images/img2.jpg" alt="alfredo" width="200px" height="270px">
+                <img src="./Images/img3.jpg" alt="alfredo" width="200px" height="270px">
+            </div>
+            <a href="#photos"><button>More Photos</button></a>
+        </div>
+        <div id="about" class="about">
+            <h2>About Alfredo Sauce</h2>
+            <p>Alfredo sauce is a white sauce which is often used to accompany pasta dishes. Traditionally, it was made with butter and Parmesan cheese, but more modernly, and especially in the United States, this sauce also includes heavy cream. In many parts of the world, it is prepared separately from the pasta, and it is sometimes also available for sale in jars at stores.</p>
+            <p>In Italy, the country where the sauce originated from, Alfredo sauce is not made separately from the pasta. Instead, the ingredients are added to the pasta individually and the whole mixture is tossed to coat the pasta. Both methods are perfectly acceptable, and you can find directions below detailing each technique.</p>
+            <p>The core ingredients of Alfredo sauce are high quality salted butter, heavy cream, and freshly grated Parmesan. Variants include additions like pepper, nutmeg, and parsley. Outside of Italy, this sauce is often combined with proteins such as chicken, or vegetables.</p>
+        </div>
+        <div id="ingredients" class="ingredients">
+            <h2>Ingredients</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Ingredient</th>
+                        <th>Measurement</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Butter</td>
+                    <td><sup>1</sup>/<sub>4</sub> cup</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Garlic (grated or crushed)</td>
+                    <td>1 clove</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Heavy cream</td>
+                    <td>1 cup</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Freshly grated Permesan cheese</td>
+                    <td>1 <sup>1</sup>/<sub>2</sub> cups</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Salt and spice (to taste)</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Grated nutmeg (optional)</td>
+                    <td>a pinch</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Chopped fresh parsley</td>
+                    <td><sup>1</sup>/<sub>4</sub> cup</td>
+                </tr>
+            </table>
+        </div>
+        <div id="steps" class="steps">
+            <h2>Steps</h2>
+            <p>Methods/ Directions for preparing the versatile Alfredo sauce </p>
+            <ol>
+                <li>Melt butter in a saucepan over medium low heat. If you're flavoring the sauce with garlic, add it to the melted butter and cook for about 1 minute. Do not let it brown.</li>
+                <li>Whisk in the cream and simmer gently for 5 minutes to cook out some of the water from the cream.</li>
+                <li>Remove the pan from heat and add cheese a handful at a time, whisking after each addition until the cheese is melted.</li>
+                <li>Return the pan to the heat and let the sauce simmer gently for 4 to 5 minutes more until the sauce is thickened. Do not let the sauce boil or else it will separate and lose its smooth texture.</li>
+                <li>Season with salt and pepper and add a pinch of freshly grated nutmeg (optional), because nutmeg is heavenly in cream sauce.</li>
+                <li>If you're cooking pasta: When your pasta is cooked, drain it well (do not rinse it) and toss it in the pan with the hot Alfredo sauce.</li>
+                <li>Garnish with parsley and serve immediately.</li>
+            </ol>
+            <p><b>Tips: </b></p>Do not use pre-grated cheese; it's coated with a substance that inhibits smooth melting and will ruin the texture of your Alfredo sauce.</p>
+        </div>
+        <div id="photos">
+            <h2>Photos</h2>
+            <ul class="images">
+                <li><img src="./Images/img4.jpg" alt="afredo" width="200px" height="270px"></li>
+                <li><img src="./Images/img5.jpg" alt="afredo" width="200px" height="270px"></li>
+                <li><img src="./Images/img6.jpg" alt="afredo" width="200px" height="270px"></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <nav class="navlist">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#steps">Steps</a></li>
+                <li><a href="#photos">Photos</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
